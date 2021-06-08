@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">
+                Covid Monitor System
+            </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h4 class="alert alert-light text-center"> An Iot Project to monitor Bpm and SpO2 patients behavior </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img class="img-fluid" src="{{ url_for('static', filename= 'img/portada.png') }}" alt="Card image cap">
+        </div>
+    </div>
+    <br><br><br>
+</div>
+{% endblock %}

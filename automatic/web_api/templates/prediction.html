@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center alert alert-light">Enter patient ID</h2>
+        </div>
+    </div>
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-xs-12 col-md-6 col-lg-6 text-center formcolor">
+            <form method="POST" action="/show_behavior" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput">ID</label>
+                    <input type="text" class="form-control" id="cedula" name="cedula"
+                        placeholder="Enter Patient ID">
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-primary text-white">Submit</button>
+        </div>
+
+        </form>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+{% endblock %}
